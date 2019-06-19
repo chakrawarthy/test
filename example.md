@@ -1,10 +1,10 @@
-## Operation title
+## getInSkillProducts
 
-{description of the operation}
+Gets In-Skill Products based on user's context for the Skill.
 
 ### Request
 
-`{HTTP method} {HTTP path}`
+`GET /v1/users/~current/skills/~current/inSkillProducts`
 
 #### Request body structure
 
@@ -46,13 +46,27 @@
 
 ### Response
 
-`{HTTP status}`
+`200`
 
 #### Response body structure
 
 ```json
 {
-  response body structure here ...
+  "inSkillProducts": [
+    {
+      "productId": "foo",
+      "referenceName": "foo",
+      "name": "Friendly Name",
+      "type": "SUBSCRIPTION",
+      "summary": "Description of the product.",
+      "entitled": "NOT_ENTITLED",
+      "purchasable": "PURCHASABLE",
+      "activeEntitlementCount": 0,
+      "purchaseMode": "TEST"
+    }
+  ],
+  "isTruncated": true,
+  "nextToken": "foobar"
 }
 ```
 
@@ -75,10 +89,22 @@
   </thead>
   <tbody>
     <tr>
-      <td markdown="span">`{name of the field}`</td>
-      <td markdown="span">{description of the field}</td>
-      <td markdown="span">{location of the field (body or HTTP header, etc.)}</td>
-      <td markdown="span">{type of the field (String or Boolean, etc.)}</td>
+      <td markdown="span">inSkillProductsResponse</td>
+      <td markdown="span">List of In-Skill Products</td>
+      <td markdown="span">body</td>
+      <td markdown="span">Array of inSkillProduct</td>
+    </tr>
+    <tr>
+      <td markdown="span">isTruncated</td>
+      <td markdown="span"></td>
+      <td markdown="span">body</td>
+      <td markdown="span">boolean</td>
+    </tr>
+      <tr>
+      <td markdown="span">nextToken</td>
+      <td markdown="span"></td>
+      <td markdown="span"></td>
+      <td markdown="span">String</td>
     </tr>
   </tbody>
 </table>
