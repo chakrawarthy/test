@@ -6,14 +6,6 @@ Gets In-Skill Products based on user's context for the Skill.
 
 `GET /v1/users/~current/skills/~current/inSkillProducts`
 
-#### Request body structure
-
-```json
-{
-  request body structure here ...
-}
-```
-
 #### Request parameters
 
 <table>
@@ -35,11 +27,11 @@ Gets In-Skill Products based on user's context for the Skill.
   </thead>
   <tbody>
     <tr>
-      <td markdown="span">`{name of the parameter}`</td>
-      <td markdown="span">{Yes or No}</td>
-      <td markdown="span">{description of the parameter}</td>
-      <td markdown="span">{location of the parameter (Path or Body or Query, etc.)}</td>
-      <td markdown="span">{type of the parameter (String or Boolean, etc.)}</td>
+      <td markdown="span">Authorization</td>
+      <td markdown="span">Yes</td>
+      <td markdown="span">access token used for authentication and authorization. This is passed to the user in the SPI call.</td>
+      <td markdown="span">header</td>
+      <td markdown="span">String</td>
     </tr>
   </tbody>
 </table>
@@ -126,8 +118,16 @@ An unsuccessful request returns one of the following errors:
   </thead>
   <tbody>
     <tr>
-      <td markdown="span">`{HTTP status}`</td>
-      <td markdown="span">{description of the error}</td>
+      <td markdown="span">400</td>
+      <td markdown="span">Invalid request</td>
+    </tr>
+        <tr>
+      <td markdown="span">401</td>
+      <td markdown="span">The authentication token is invalid or doesn't have access to make this request</td>
+    </tr>
+        <tr>
+      <td markdown="span">500</td>
+      <td markdown="span">Internal Server Error</td>
     </tr>
   </tbody>
 </table>
