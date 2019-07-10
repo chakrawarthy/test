@@ -33,6 +33,13 @@ Gets In-Skill Products based on user's context for the Skill.
       <td markdown="span">header</td>
       <td markdown="span">String</td>
     </tr>
+    <tr>
+      <td markdown="span">Accept-Language</td>
+      <td markdown="span">Yes</td>
+      <td markdown="span">aUser's locale/language in context.</td>
+      <td markdown="span">header</td>
+      <td markdown="span">String</td>
+    </tr>
   </tbody>
 </table>
 
