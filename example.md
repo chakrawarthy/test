@@ -95,7 +95,7 @@ GET /v1/users/~current/skills/~current/inSkillProducts
 <td markdown="span">200</td>
 <td markdown="span">Returns a list of In-Skill products on success.</td>
 <td markdown="span">
-#/components/schemas/services.monetization.InSkillProductsResponse
+[InSkillProductsResponse](#components-schemas-services.monetization.InSkillProductsResponse)
 </td>
 </tr>
 <tr>
@@ -152,7 +152,7 @@ GET /v1/users/~current/skills/~current/inSkillProducts
 </tbody>
 </table>
 
-### services.monetization.InSkillProductsResponse
+### services.monetization.InSkillProductsResponse {#components-schemas-services.monetization.InSkillProductsResponse}
 #### Response body structure
 
 <table>
