@@ -95,7 +95,9 @@ GET /v1/users/~current/skills/~current/inSkillProducts
 <td markdown="span">200</td>
 <td markdown="span">Returns a list of In-Skill products on success.</td>
 <td markdown="span">
+  
 [InSkillProductsResponse](#components-schemas-services.monetization.InSkillProductsResponse)
+
 </td>
 </tr>
 <tr>
