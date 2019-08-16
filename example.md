@@ -100,7 +100,7 @@ sets the maximum number of results returned in the response body. If you want to
 <td markdown="span">Returns a list of In-Skill products on success.</td>
 <td markdown="span">
   
-[InSkillProductsResponse](#components-schemas-services.monetization.InSkillProductsResponse)
+[InSkillProductsResponse](#services.monetization.InSkillProductsResponse)
 
 </td>
 </tr>
@@ -158,7 +158,7 @@ sets the maximum number of results returned in the response body. If you want to
 </tbody>
 </table>
 
-### services.monetization.InSkillProductsResponse {#components-schemas-services.monetization.InSkillProductsResponse}
+### services.monetization.InSkillProductsResponse
 #### Response body structure
 
 <table>
