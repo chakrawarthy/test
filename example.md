@@ -67,7 +67,11 @@ GET /v1/users/~current/skills/~current/inSkillProducts
 <tr>
 <td markdown="span">maxResults</td>
 <td markdown="span">query</td>
-<td markdown="span">sets the maximum number of results returned in the response body. If you want to retrieve fewer than upper limit of 100 results, you can add this parameter to your request. maxResults should not exceed the upper limit. The response might contain fewer results than maxResults, but it will never contain more. If there are additional results that satisfy the search criteria, but these results were not returned because maxResults was exceeded, the response contains isTruncated = true.</td>
+<td markdown="span">
+  
+sets the maximum number of results returned in the response body. If you want to retrieve fewer than upper limit of 100 results, you can add this parameter to your request. maxResults should not exceed the upper limit. The response might contain fewer results than maxResults, but it will never contain more. If there are additional results that satisfy the search `criteria`, but these results were not returned because maxResults was exceeded, the response contains isTruncated = true.
+  
+</td>
 <td markdown="span">no</td>
 <td markdown="span">number</td>
 </tr>
