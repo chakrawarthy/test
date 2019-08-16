@@ -100,7 +100,7 @@ sets the maximum number of results returned in the response body. If you want to
 <td markdown="span">Returns a list of In-Skill products on success.</td>
 <td markdown="span">
   
-[InSkillProductsResponse](#services.monetization.InSkillProductsResponse)
+[InSkillProductsResponse](#servicesmonetizationinskillproduct)
 
 </td>
 </tr>
